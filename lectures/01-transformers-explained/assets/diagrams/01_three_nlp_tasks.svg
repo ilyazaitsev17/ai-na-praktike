@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+
+  <rect width="1200" height="720" fill="#0d1117"/>
+
+  <text x="600" y="64" text-anchor="middle" font-size="40" font-weight="800" fill="#e6edf3">
+    Три типа задач NLP
+  </text>
+  <text x="600" y="100" text-anchor="middle" font-size="17" font-weight="400" fill="#8b949e">
+    всё что машина может делать с текстом — попадает в одну из них
+  </text>
+
+  <!-- КЛАССИФИКАЦИЯ -->
+  <g transform="translate(40, 150)">
+    <rect x="0" y="0" width="360" height="520" rx="20" ry="20"
+          fill="#161b22" stroke="#26D9C9" stroke-width="2"/>
+    <rect x="0" y="0" width="4" height="520" fill="#26D9C9"/>
+
+    <text x="180" y="60" text-anchor="middle" font-size="26" font-weight="800" fill="#26D9C9">
+      КЛАССИФИКАЦИЯ
+    </text>
+    <text x="180" y="92" text-anchor="middle" font-size="14" font-weight="500" fill="#8b949e">
+      один ответ из заданного списка
+    </text>
+
+    <g transform="translate(40, 130)">
+      <rect x="0" y="0" width="280" height="56" rx="10" ry="10"
+            fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+      <text x="140" y="34" text-anchor="middle" font-size="15" font-weight="500" fill="#e6edf3">
+        отзыв клиента
+      </text>
+    </g>
+
+    <g transform="translate(180, 210)">
+      <line x1="0" y1="0" x2="0" y2="36" stroke="#26D9C9" stroke-width="2.5"/>
+      <polyline points="-8,28 0,38 8,28" fill="none" stroke="#26D9C9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <g transform="translate(40, 270)">
+      <rect x="0" y="0" width="280" height="44" rx="10" ry="10" fill="#26D9C9"/>
+      <text x="140" y="29" text-anchor="middle" font-size="16" font-weight="700" fill="#0d1117">
+        ПОЗИТИВНЫЙ
+      </text>
+
+      <rect x="0" y="58" width="280" height="44" rx="10" ry="10"
+            fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+      <text x="140" y="87" text-anchor="middle" font-size="14" font-weight="500" fill="#8b949e">
+        нейтральный
+      </text>
+
+      <rect x="0" y="116" width="280" height="44" rx="10" ry="10"
+            fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+      <text x="140" y="145" text-anchor="middle" font-size="14" font-weight="500" fill="#8b949e">
+        негативный
+      </text>
+    </g>
+
+    <line x1="30" y1="465" x2="330" y2="465" stroke="#30363d" stroke-width="1"/>
+    <text x="180" y="492" text-anchor="middle" font-size="13" font-weight="600" fill="#26D9C9" opacity="0.8">
+      Фильтр отзывов на маркетплейсе
+    </text>
+  </g>
+
+  <!-- МУЛЬТИ-КЛАССИФИКАЦИЯ -->
+  <g transform="translate(420, 150)">
+    <rect x="0" y="0" width="360" height="520" rx="20" ry="20"
+          fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+    <rect x="0" y="0" width="4" height="520" fill="#f0883e"/>
+
+    <text x="180" y="60" text-anchor="middle" font-size="22" font-weight="800" fill="#f0883e">
+      МУЛЬТИ-КЛАССИФИКАЦИЯ
+    </text>
+    <text x="180" y="92" text-anchor="middle" font-size="14" font-weight="500" fill="#8b949e">
+      несколько меток на один текст
+    </text>
+
+    <g transform="translate(30, 130)">
+      <rect x="0" y="0" width="300" height="220" rx="12" ry="12"
+            fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+
+      <g transform="translate(20, 40)">
+        <text x="0" y="0" font-size="15" font-weight="500" fill="#e6edf3">Заказал</text>
+        <text x="78" y="0" font-size="15" font-weight="700" fill="#f0883e">стол</text>
+        <text x="117" y="0" font-size="15" font-weight="500" fill="#e6edf3">в</text>
+        <text x="132" y="0" font-size="15" font-weight="700" fill="#f0883e">Казани</text>
+        <text x="0" y="28" font-size="15" font-weight="500" fill="#e6edf3">доставка</text>
+        <text x="89" y="28" font-size="15" font-weight="700" fill="#f0883e">задерживается</text>
+      </g>
+
+      <g transform="translate(20, 100)">
+        <rect x="0" y="0" width="76" height="28" rx="14" ry="14" fill="#f0883e"/>
+        <text x="38" y="19" text-anchor="middle" font-size="12" font-weight="800" fill="#0d1117">ТОВАР</text>
+
+        <rect x="86" y="0" width="76" height="28" rx="14" ry="14" fill="#f0883e"/>
+        <text x="124" y="19" text-anchor="middle" font-size="12" font-weight="800" fill="#0d1117">ГОРОД</text>
+
+        <rect x="172" y="0" width="92" height="28" rx="14" ry="14" fill="#f0883e"/>
+        <text x="218" y="19" text-anchor="middle" font-size="12" font-weight="800" fill="#0d1117">ПРОБЛЕМА</text>
+      </g>
+
+      <g transform="translate(20, 150)">
+        <text x="0" y="0" font-size="13" font-weight="500" fill="#8b949e">→ отдел доставки</text>
+        <text x="0" y="22" font-size="13" font-weight="500" fill="#8b949e">→ менеджер по Казани</text>
+      </g>
+    </g>
+
+    <line x1="30" y1="465" x2="330" y2="465" stroke="#30363d" stroke-width="1"/>
+    <text x="180" y="492" text-anchor="middle" font-size="13" font-weight="600" fill="#f0883e" opacity="0.8">
+      Автомаршрутизация обращений
+    </text>
+  </g>
+
+  <!-- ГЕНЕРАЦИЯ -->
+  <g transform="translate(800, 150)">
+    <rect x="0" y="0" width="360" height="520" rx="20" ry="20"
+          fill="#161b22" stroke="#56d364" stroke-width="2"/>
+    <rect x="0" y="0" width="4" height="520" fill="#56d364"/>
+
+    <text x="180" y="60" text-anchor="middle" font-size="26" font-weight="800" fill="#56d364">
+      ГЕНЕРАЦИЯ
+    </text>
+    <text x="180" y="92" text-anchor="middle" font-size="14" font-weight="500" fill="#8b949e">
+      текст → текст любой длины
+    </text>
+
+    <g transform="translate(40, 130)">
+      <rect x="0" y="0" width="280" height="56" rx="10" ry="10"
+            fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+      <text x="140" y="34" text-anchor="middle" font-size="14" font-weight="500" fill="#e6edf3">
+        переведи: «мама мыла раму»
+      </text>
+    </g>
+
+    <g transform="translate(180, 210)">
+      <line x1="0" y1="0" x2="0" y2="36" stroke="#56d364" stroke-width="2.5"/>
+      <polyline points="-8,28 0,38 8,28" fill="none" stroke="#56d364" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <g transform="translate(40, 270)">
+      <rect x="0" y="0" width="280" height="130" rx="12" ry="12" fill="#56d364"/>
+      <text x="140" y="42" text-anchor="middle" font-size="16" font-weight="700" fill="#0d1117">
+        Mom was washing
+      </text>
+      <text x="140" y="68" text-anchor="middle" font-size="16" font-weight="700" fill="#0d1117">
+        the window frame.
+      </text>
+
+      <g transform="translate(140, 95)">
+        <circle cx="-12" cy="0" r="2.5" fill="#0d1117" opacity="0.5"/>
+        <circle cx="0" cy="0" r="2.5" fill="#0d1117" opacity="0.5"/>
+        <circle cx="12" cy="0" r="2.5" fill="#0d1117" opacity="0.5"/>
+      </g>
+    </g>
+
+    <text x="180" y="425" text-anchor="middle" font-size="12" font-weight="500" fill="#8b949e">
+      длина любая — токен за токеном
+    </text>
+
+    <line x1="30" y1="465" x2="330" y2="465" stroke="#30363d" stroke-width="1"/>
+    <text x="180" y="492" text-anchor="middle" font-size="13" font-weight="600" fill="#56d364" opacity="0.8">
+      ChatGPT · Claude · Gemini
+    </text>
+  </g>
+
+</svg>
