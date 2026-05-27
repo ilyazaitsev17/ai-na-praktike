@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+
+  <rect width="1200" height="720" fill="#0d1117"/>
+
+  <text x="600" y="64" text-anchor="middle" font-size="40" font-weight="800" fill="#e6edf3">
+    Квантизация — снижаем точность чисел
+  </text>
+  <text x="600" y="100" text-anchor="middle" font-size="17" font-weight="400" fill="#8b949e">
+    как округление выручки — «385 тысяч» вместо «385 412 рублей 33 копейки»
+  </text>
+
+  <!-- FP32 -->
+  <g transform="translate(60, 170)">
+    <rect x="0" y="0" width="260" height="460" rx="20" ry="20"
+          fill="#161b22" stroke="#8b949e" stroke-width="2"/>
+    <rect x="0" y="0" width="4" height="460" fill="#8b949e"/>
+
+    <text x="130" y="56" text-anchor="middle" font-size="32" font-weight="800" fill="#e6edf3">
+      FP32
+    </text>
+    <text x="130" y="84" text-anchor="middle" font-size="13" font-weight="500" fill="#8b949e">
+      полная точность
+    </text>
+
+    <!-- Визуал точности -->
+    <g transform="translate(30, 130)">
+      <rect x="0" y="0" width="200" height="40" rx="6" fill="#8b949e"/>
+    </g>
+
+    <g transform="translate(30, 220)">
+      <text x="0" y="0" font-size="12" font-weight="700" fill="#8b949e" letter-spacing="1">ПАМЯТЬ</text>
+      <text x="0" y="32" font-size="28" font-weight="800" fill="#e6edf3">4 байта</text>
+    </g>
+
+    <g transform="translate(30, 310)">
+      <text x="0" y="0" font-size="12" font-weight="700" fill="#8b949e" letter-spacing="1">СКОРОСТЬ H100</text>
+      <text x="0" y="32" font-size="22" font-weight="800" fill="#e6edf3">34 TFLOPS</text>
+    </g>
+
+    <line x1="20" y1="410" x2="240" y2="410" stroke="#30363d" stroke-width="1"/>
+    <text x="130" y="438" text-anchor="middle" font-size="12" font-weight="600" fill="#8b949e" opacity="0.85">
+      базовая точность
+    </text>
+  </g>
+
+  <!-- FP16 -->
+  <g transform="translate(340, 170)">
+    <rect x="0" y="0" width="260" height="460" rx="20" ry="20"
+          fill="#161b22" stroke="#26D9C9" stroke-width="2"/>
+    <rect x="0" y="0" width="4" height="460" fill="#26D9C9"/>
+
+    <text x="130" y="56" text-anchor="middle" font-size="32" font-weight="800" fill="#26D9C9">
+      FP16
+    </text>
+    <text x="130" y="84" text-anchor="middle" font-size="13" font-weight="500" fill="#8b949e">
+      половина точности
+    </text>
+
+    <g transform="translate(30, 130)">
+      <rect x="0" y="0" width="100" height="40" rx="6" fill="#26D9C9"/>
+    </g>
+
+    <g transform="translate(30, 220)">
+      <text x="0" y="0" font-size="12" font-weight="700" fill="#26D9C9" letter-spacing="1">ПАМЯТЬ</text>
+      <text x="0" y="32" font-size="28" font-weight="800" fill="#e6edf3">2 байта</text>
+    </g>
+
+    <g transform="translate(30, 310)">
+      <text x="0" y="0" font-size="12" font-weight="700" fill="#26D9C9" letter-spacing="1">СКОРОСТЬ H100</text>
+      <text x="0" y="32" font-size="22" font-weight="800" fill="#26D9C9">67 TFLOPS</text>
+    </g>
+
+    <line x1="20" y1="410" x2="240" y2="410" stroke="#30363d" stroke-width="1"/>
+    <text x="130" y="438" text-anchor="middle" font-size="12" font-weight="600" fill="#26D9C9" opacity="0.85">
+      ×2 экономия памяти
+    </text>
+  </g>
+
+  <!-- INT8 -->
+  <g transform="translate(620, 170)">
+    <rect x="0" y="0" width="260" height="460" rx="20" ry="20"
+          fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+    <rect x="0" y="0" width="4" height="460" fill="#f0883e"/>
+
+    <text x="130" y="56" text-anchor="middle" font-size="32" font-weight="800" fill="#f0883e">
+      INT8
+    </text>
+    <text x="130" y="84" text-anchor="middle" font-size="13" font-weight="500" fill="#8b949e">
+      целые 8 бит
+    </text>
+
+    <g transform="translate(30, 130)">
+      <rect x="0" y="0" width="50" height="40" rx="6" fill="#f0883e"/>
+    </g>
+
+    <g transform="translate(30, 220)">
+      <text x="0" y="0" font-size="12" font-weight="700" fill="#f0883e" letter-spacing="1">ПАМЯТЬ</text>
+      <text x="0" y="32" font-size="28" font-weight="800" fill="#e6edf3">1 байт</text>
+    </g>
+
+    <g transform="translate(30, 310)">
+      <text x="0" y="0" font-size="12" font-weight="700" fill="#f0883e" letter-spacing="1">СКОРОСТЬ H100</text>
+      <text x="0" y="32" font-size="22" font-weight="800" fill="#f0883e">130+ TFLOPS</text>
+    </g>
+
+    <line x1="20" y1="410" x2="240" y2="410" stroke="#30363d" stroke-width="1"/>
+    <text x="130" y="438" text-anchor="middle" font-size="12" font-weight="600" fill="#f0883e" opacity="0.85">
+      ×4 экономия · быстрее
+    </text>
+  </g>
+
+  <!-- NF4 -->
+  <g transform="translate(900, 170)">
+    <rect x="0" y="0" width="260" height="460" rx="20" ry="20"
+          fill="#161b22" stroke="#56d364" stroke-width="2"/>
+    <rect x="0" y="0" width="4" height="460" fill="#56d364"/>
+
+    <text x="130" y="56" text-anchor="middle" font-size="32" font-weight="800" fill="#56d364">
+      NF4
+    </text>
+    <text x="130" y="84" text-anchor="middle" font-size="13" font-weight="500" fill="#8b949e">
+      4 бита · для QLoRA
+    </text>
+
+    <g transform="translate(30, 130)">
+      <rect x="0" y="0" width="25" height="40" rx="6" fill="#56d364"/>
+    </g>
+
+    <g transform="translate(30, 220)">
+      <text x="0" y="0" font-size="12" font-weight="700" fill="#56d364" letter-spacing="1">ПАМЯТЬ</text>
+      <text x="0" y="32" font-size="28" font-weight="800" fill="#e6edf3">0.5 байта</text>
+    </g>
+
+    <g transform="translate(30, 310)">
+      <text x="0" y="0" font-size="12" font-weight="700" fill="#56d364" letter-spacing="1">ЭКОНОМИЯ</text>
+      <text x="0" y="32" font-size="22" font-weight="800" fill="#56d364">×16 раз</text>
+    </g>
+
+    <line x1="20" y1="410" x2="240" y2="410" stroke="#30363d" stroke-width="1"/>
+    <text x="130" y="438" text-anchor="middle" font-size="12" font-weight="600" fill="#56d364" opacity="0.85">
+      fine-tuning на одной GPU
+    </text>
+  </g>
+
+</svg>
